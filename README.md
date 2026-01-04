@@ -31,6 +31,7 @@
 ## Hypotheses
 - Game uses sampler repeat; UVs outside [0,1] should not be wrapped in data. Need the correct UV set (Stream2 vs packed) per model.
 - There may be per-material transform/scaling in game code or shaders that we have not located.
+<img width="260" height="137" alt="Screenshot 2026-01-04 114701" src="https://github.com/user-attachments/assets/e8380ae7-3c8b-480f-abfb-5908d3dfb025" />
 
 ## Next Steps
 1) Per-model UV set trial: export three variants (Stream2 UVs, Packed UV0, Packed UV1) and visually verify against textures; adopt the correct source globally.
